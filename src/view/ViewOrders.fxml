@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewOrdersController">
+   <children>
+      <Label alignment="CENTER" prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: black;" text="View Order Form" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnHome" layoutX="1111.0" layoutY="25.0" onAction="#btnHomeOnAction" style="-fx-border-color: white; -fx-border-radius: 10px;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tblOrder" blendMode="EXCLUSION" layoutX="284.0" layoutY="383.0" onMouseClicked="#ValueMouseOnClick" prefHeight="343.0" prefWidth="652.0">
+        <columns>
+          <TableColumn fx:id="clmOrderId" prefWidth="200.0" text="Order Id" />
+          <TableColumn fx:id="clmDate" prefWidth="250.0" text="Date" />
+            <TableColumn fx:id="clmCustomerId" prefWidth="200.0" text="Customer Id" />
+        </columns>
+      </TableView>
+      <Label layoutX="898.0" layoutY="139.0" prefHeight="45.0" prefWidth="77.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDate" layoutX="975.0" layoutY="139.0" prefHeight="45.0" prefWidth="200.0">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </TextField>
+      <Label layoutX="440.0" layoutY="146.0" prefHeight="45.0" prefWidth="170.0" text="Order Id              :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="440.0" layoutY="198.0" prefHeight="45.0" prefWidth="170.0" text="Order Date         :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="440.0" layoutY="252.0" prefHeight="45.0" prefWidth="170.0" text="Customer Id       :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnDelete" layoutX="550.0" layoutY="318.0" onAction="#deleteBtnOnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: red; -fx-background-radius: 10px;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblOrderId" layoutX="610.0" layoutY="146.0" prefHeight="45.0" prefWidth="170.0" style="-fx-text-fill: red;">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderDate" layoutX="610.0" layoutY="198.0" prefHeight="45.0" prefWidth="170.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCustomerId" layoutX="610.0" layoutY="252.0" prefHeight="45.0" prefWidth="170.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

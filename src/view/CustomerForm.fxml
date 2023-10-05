@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
+   <children>
+      <Label alignment="CENTER" prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: black;" text="Customer Form" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="125.0" prefHeight="55.0" prefWidth="183.0" text="Customer Id :">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtId" layoutX="475.0" layoutY="125.0" onAction="#txtIdOnAction" prefHeight="45.0" prefWidth="200.0" unFocusColor="#4d4d4d">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="tblCustomer" blendMode="EXCLUSION" layoutX="100.0" layoutY="396.0" onMouseClicked="#valueMouseOnClick" prefHeight="340.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="150.0" text="Customer ID" />
+          <TableColumn minWidth="0.0" prefWidth="0.0" text="C2" />
+            <TableColumn fx:id="colName" prefWidth="302.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="344.0" text="Address" />
+            <TableColumn fx:id="colSalary" prefWidth="203.0" text="Salary" />
+        </columns>
+      </TableView>
+      <Label layoutX="280.0" layoutY="185.0" prefHeight="55.0" prefWidth="183.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="245.0" prefHeight="55.0" prefWidth="183.0" text="Address :">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="305.0" prefHeight="55.0" prefWidth="183.0" text="Salary :">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" layoutX="475.0" layoutY="185.0" prefHeight="45.0" prefWidth="200.0" unFocusColor="#4d4d4d">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" layoutX="475.0" layoutY="245.0" prefHeight="45.0" prefWidth="200.0" unFocusColor="#4d4d4d">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSalary" layoutX="475.0" layoutY="305.0" prefHeight="45.0" prefWidth="200.0" unFocusColor="#4d4d4d">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnUpdate" layoutX="754.0" layoutY="130.0" onAction="#updateBtnOnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: green; -fx-background-radius: 10px;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="754.0" layoutY="190.0" onAction="#deleteBtnOnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: red; -fx-background-radius: 10px;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnAdd" layoutX="754.0" layoutY="250.0" onAction="#addBtnOnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: royalblue; -fx-background-radius: 10px;" text="Add " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" layoutX="754.0" layoutY="315.0" onAction="#clearBtnOnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: gray; -fx-background-radius: 10px;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="899.0" layoutY="131.0" prefHeight="45.0" prefWidth="77.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDate" layoutX="976.0" layoutY="131.0" prefHeight="45.0" prefWidth="200.0">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnHome" layoutX="1111.0" layoutY="25.0" onAction="#btnHomeOnAction" style="-fx-border-color: white; -fx-border-radius: 10px;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

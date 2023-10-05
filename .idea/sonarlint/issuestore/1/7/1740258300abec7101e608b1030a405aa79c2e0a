@@ -1,0 +1,13 @@
+
+d
+java:S2095?"GUse try-with-resources or close this "Statement" in a "finally" clause.(†—İ8æˆÅ–Ÿ1
+[
+java:S3655}"9Call "buttonType.isPresent()" before accessing the value.(²Ôûøùÿÿÿÿ8åÕ¿–Ÿ1
+
+java:S1186w"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ò¯¸8æÕ¿–Ÿ1
+O
+java:S1172N"2Remove this unused method parameter "actionEvent".(ó’ñ8ìÕ¿–Ÿ1
+O
+java:S1172Y"2Remove this unused method parameter "actionEvent".(ÃÇ—8íÕ¿–Ÿ1
+O
+java:S1172c"2Remove this unused method parameter "actionEvent".(½Õã°8íÕ¿–Ÿ1

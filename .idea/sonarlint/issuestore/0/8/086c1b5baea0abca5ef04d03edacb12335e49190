@@ -1,0 +1,38 @@
+
+`	java:S112o"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+a	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+a	java:S112¤"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+a	java:S112¾"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+a	java:S112ğ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+q
+java:S1192l"VDefine a constant instead of duplicating this literal "Something went Wrong!" 3 times.(“ºØÔûÿÿÿÿ
+
+java:S1319İ"tThe type of "OrderDetailArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ÁŞã¬øÿÿÿÿ
+k	java:S117c"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ïôùÿÿÿÿ
+l	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒü×Úúÿÿÿÿ
+g	java:S117¯"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èœ¾ù
+l	java:S117İ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŞã¬øÿÿÿÿ
+^
+java:S2095œ"GUse try-with-resources or close this "Statement" in a "finally" clause.(†—İ
+e
+java:S2095³"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(®œ8
+]
+java:S2095M"GUse try-with-resources or close this "Statement" in a "finally" clause.(†—İ
+f
+java:S2095é"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ŞÉ²
+^
+java:S2095ˆ"GUse try-with-resources or close this "Statement" in a "finally" clause.(†—İ
+e
+java:S2095d"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(»œ›½
+U
+java:S3655«"9Call "buttonType.isPresent()" before accessing the value.(²Ôûøùÿÿÿÿ
+T
+java:S3655_"9Call "buttonType.isPresent()" before accessing the value.(²Ôûøùÿÿÿÿ
+U
+java:S3655„"9Call "buttonType.isPresent()" before accessing the value.(²Ôûøùÿÿÿÿ
+U
+java:S3655Ó"9Call "buttonType.isPresent()" before accessing the value.(²Ôûøùÿÿÿÿ
+>
+java:S1905È"'Remove this unnecessary cast to "Item".(‡±±
+W
+java:S1128";Remove this unused import 'com.jfoenix.controls.JFXButton'.(„•£8ğèÙ–Ÿ1
